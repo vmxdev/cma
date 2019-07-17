@@ -1,2 +1,4 @@
 # cma
-Cumulative moving average tests
+Cumulative moving average: math, implementation and tests
+
+

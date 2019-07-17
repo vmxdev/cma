@@ -1,5 +1,5 @@
-set term png
+set term png size 1000,400
 set output 'velo.png'
 set title "Velocity"
-set yrange [0:1.1]
-plot 'velocity.dat'
+plot 'velocity.dat' using 1:2 title 'precise avg', \
+	'velocity.dat' using 1:3 title 'cumulative avg'
