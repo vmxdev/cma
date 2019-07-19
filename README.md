@@ -5,12 +5,12 @@ Cumulative moving average on sparse data: implementation and tests (work in prog
 By sparse data we mean time series, where events are rare enough, e.g. there is gaps (or empty values) between events.
 ![sparse data](img/sparse.png?raw=true "sparse data")
 
-There is a lot of methods for analyzing such time series. We will describe cummulative moving window for calculating average data for the last time in the sample window.
+There is a lot of methods for analyzing such time series. We will describe cummulative moving window for calculating average data for the last events in the sample window.
 
 ![moving window](img/mw.png?raw=true "moving window")
 
 ## Number of events
-To calculate number of events in window `W` we can use the following iterative formula:
+To calculate number of events in window `W` we will use the following iterative formula:
 
 ![cma](http://latex.codecogs.com/gif.latex?N_%7Bn&plus;1%7D%20%3D%20N_%7Bn%7D%20-%20N_%7Bn%7D%5Ccdot%20%5Cfrac%7Bdt%7D%7BW%7D%20&plus;%201)
 
